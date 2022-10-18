@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Jagdamba-Harion</title>
+	<link rel="stylesheet" href="jagdamba.css">
+	<link rel="stylesheet" href="header.css">
+</head>
+<body>
+<main>
+	<div class="Header">
+		<img src="./images/jagdamba-logo-dark.svg" alt="header jags">
+		<nav>
+  		<ul> <!-- main ul -->
+  		   <li class="home"><FaHome /></li> {/* Home icon */}
+   <li onClick={aboutShow}> {/* About. main li */}
+     <a href="#!">ABOUT US &#9662;</a>
+     <ul class={aboutHide ? 'AboutSh': 'AboutHi'}>
+       <li><a href="https://jagdambasteels.com/about/">Jagdamba Steel</a></li>
+       <li><a href="https://jagdambasteels.com/about-shanker-group/">About Shankar</a></li>
+       <li><a href="https://jagdambasteels.com/sustainability/">Sustainability</a></li>
+       <li><a href="https://jagdambasteels.com/team/">Team</a></li>
+       <li><a href="https://jagdambasteels.com/certification/">Certification</a></li>
+     </ul>
+   </li>
+
+      <li onClick={productShow}> {/* Product. main li */}
+        <a href="#!">PRODUCTS &#9662;</a>
+        <ul class={productHide ? 'ProductSh': 'ProductHi'}> {/* Products main ui */}
+          <li><a href="https://jagdambasteels.com/products/fe-500-rebar/">Jagdamba E</a></li>
+          <li><a href="https://jagdambasteels.com/products/fe-500-d-rebar/">Fe 500 d rebar</a></li>
+          <li><a href="https://jagdambasteels.com/products/ms-angle/">Ms Angle</a></li>
+          <li><a href="https://jagdambasteels.com/products/beams/">Beams</a></li>
+          <li><a href="https://jagdambasteels.com/products/galvanized-wire/">Galvanized Wire</a></li>
+        </ul>
+      </li>
+
+      <li><a href="#!">CONTACTS</a></li>
+    </ul>
+    </nav>
+	</div>
+	
+	
+	
+</main>
+<script src="jagdamba.js"></script>	
+</body>
+</html>		

@@ -1,0 +1,11 @@
+* {
+	box-sizing: border-box;
+}
+body {
+	
+}
+main {
+	border: 3px solid red;
+	width: 100vw;
+	height: 100%;
+}
