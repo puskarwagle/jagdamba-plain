@@ -1,0 +1,28 @@
+@font-face {
+  font-family: Helvetica Neue;
+  src: url(../font/Helvetica.woff) format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: fallback;
+}
+* {
+	box-sizing: border-box;
+	font-family: 'Helvetica', 'Arial', sans-serif;
+	cursor: pointer;
+}
+html, body {
+	margin: 0 0 0 0;
+  width: 100%;
+  overflow-x: hidden;
+  background-color: rgba(200, 200,200, 0.3);
+}
+
+.App {
+	
+}
+.lift {
+	transform: translateY(100%);
+}
+.down{
+	transform: translateY(0%);
+}

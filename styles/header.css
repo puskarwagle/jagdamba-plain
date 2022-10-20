@@ -2,10 +2,11 @@
   display: flex;
   position: fixed;
   min-width: 100vw;
+  max-height: 100%;
   top:0;
   left:0;
   z-index: 999999999999999;
-  padding: 0vw 5vw 0vw 5vw;
+  padding: 0vw 9vw 0vw 5vw;
   background-color: rgba(50, 118, 186, 0.9);
 }
 .Header img {
@@ -14,20 +15,37 @@
 }
 .Header nav {
 	display: flex;
-  font-size: 1.5vw;
+  font-size: 1.6vw;
   color: #FFFFFF;
-  font-s: 600;
   margin-left: auto;
   outline: 0px solid red;
 }
 .Header nav ul {
   display: flex;
-  gap: 1.5rem;
+  gap: 1.7rem;
   list-style: none;
-  outline: 0px solid green;
+  outline: 0px solid orange;
 }
-.Header nav ul li ul {	/* box of abouts n products */
-	outline: 0px solid green;
+.Header nav ul li i {
+	
+}
+.Header nav ul li {
+	font-weight: 700;
+	height: 100%;
+	outline: 0px solid red;
+}
+.Header nav ul li:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px orange;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.Header nav ul li:hover:after {
+	transform: scaleX(1);
+}
+.Header nav ul .headtext .headtextbox {	/* box of abouts n products */
+	border: 1px solid grey;
 	display: flex;
   flex-direction: column;
   padding: 0.5rem 0.5rem 0.5rem 0.5rem;
@@ -35,55 +53,19 @@
   background-color: #FFFFFF;
   position: absolute;
   z-index: 99;
-}
-.Header nav ul li ul li {		/* abouts and products */
-	font-size: 1.5vw;
-	font-weight: 100;
-	color: #000000;
-}
-.AboutHi {
-  opacity: 0;
   display: none;
 }
-.AboutSh {
-	margin-top: 0.7rem;
+.Header nav ul .headtext:focus .headtextbox {
+	display: block;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
 }
-.AboutHi li {
-  opacity: 0;
+.Header nav ul .headtext .headtextbox li {		/* abouts and products */
+	font-size: 1.5vw;
+	font-weight: 50;
+	color: #000000;
+	padding: 0.5rem;
 }
-.AboutSh li {
-  transition: all 600ms;
-}
-/* PRODUCTS PRODUCTS*/
-.ProductHi {
-  opacity: 0;
-}
-.ProductSh {
-	margin-top: 0.7rem;
-}
-.ProductHi li {
-  opacity: 0;
-}
-.ProductSh li {
-	transition: all 600ms;
-}
-/* Expand */
-ul li ul li:nth-child(1) {
-  transition-delay: 100ms;
-}
-ul li ul li:nth-child(2) {
-  transition-delay: 200ms;
-}
-ul li ul li:nth-child(3) {
-  transition-delay: 300ms;
-}
-ul li ul li:nth-child(4) {
-  transition-delay: 400ms;
-}
-ul li ul li:nth-child(5) {
-  transition-delay: 500ms;
-}
-.Header a {
+a {
   color: inherit;
   text-decoration: none;
 }
