@@ -28,17 +28,16 @@
   justify-items: center;
   align-items: center;
 }
+.SuperSh {
+  transition: ease 500ms;
+  margin-right: auto;
+  width: 45%;
+}
 .SuperHi {
   transform: translateX(-100%);
   opacity: 0;
   width: 45%;
 }
-.SuperSh {
-  transition: ease 500ms;
-  margin-right: auto;
-  outline: 0px dotted green;
-  width: 45%;
-  }
 #viline {
   border-left: 2px solid rgb(157, 157, 157);
   height: 50%;
@@ -48,7 +47,7 @@
   opacity: 0;
   width: 40%;
 }
-.GyalvaSh {
+.GyalvaSH {
   transition: ease 500ms;
   width: 40%;
   margin-left: auto;

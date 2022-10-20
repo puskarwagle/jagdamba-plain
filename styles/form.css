@@ -7,6 +7,10 @@
   font-size: 2rem;
 }
 .FormHead {
+	font-size: 0.5rem;
+	transition: 500ms ease-in-out;
+}
+.FormHeadAnime {
 	font-size: 2rem;
 }
 #contact {

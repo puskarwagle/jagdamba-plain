@@ -16,13 +16,19 @@ html, body {
   overflow-x: hidden;
   background-color: rgba(200, 200,200, 0.3);
 }
-
-.App {
-	
+/* fornttexts anime */
+.textHI {
+	transform: translateY(80%);
+	opacity: 0;
+  transition: 500ms ease-in-out;
 }
-.lift {
-	transform: translateY(100%);
-}
-.down{
+.textSH {
 	transform: translateY(0%);
+	opacity: 1;
 }
+
+
+
+
+
+
