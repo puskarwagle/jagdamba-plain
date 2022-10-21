@@ -10,7 +10,7 @@ const first = new IntersectionObserver((entries) => {
 const firstT = document.querySelectorAll(".SuperHi");
 firstT.forEach((el) => first.observe(el));
 
-//Super
+//Gyalva
 const second = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 				console.log(entry)
@@ -22,7 +22,7 @@ const second = new IntersectionObserver((entries) => {
 const secondT = document.querySelectorAll(".GyalvaHi");
 secondT.forEach((el) => second.observe(el));
 
-//Super
+//Rajesh
 const third = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 				console.log(entry)
@@ -34,7 +34,7 @@ const third = new IntersectionObserver((entries) => {
 const thirdT = document.querySelectorAll(".RajeshHi");
 thirdT.forEach((el) => third.observe(el));
 
-//Super
+//Madhu
 const fourth = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
 				console.log(entry)
