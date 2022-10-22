@@ -1,28 +1,28 @@
 .Head {
 	display: flex;
+	position: fixed;
+	top: 0;
+	x-index: 99999999999;
 	flex-direction: column;
 	align-items: center;
-}
-.HeadBang {
-	position: absolute;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	height: 3rem;
-	width: 97%;
-	background-color: #FFFFFF;
-	transform: translateY(130%);
+	border: 3px solid red;
 }
 .Header {
   display: flex;
-  position: fixed;
   min-width: 100vw;
-  max-height: 100%;
-  top:0;
-  left:0;
   z-index: 999999999999999;
   padding: 0vw 9vw 0vw 5vw;
   background-color: rgba(50, 118, 186, 0.9);
+}
+.HeadBang {
+
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+
+	width: 97%;
+	background-color: #FFFFFF;
+	transform: translateY(130%);
 }
 .Header img {
   width: 24vw;

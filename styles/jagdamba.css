@@ -11,7 +11,7 @@
 	cursor: pointer;
 }
 html, body {
-	margin: 0 0 0 0;
+	margin: 0;
   width: 100%;
   overflow-x: hidden;
   background-color: rgba(200, 200,200, 0.3);
