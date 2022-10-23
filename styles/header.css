@@ -1,28 +1,40 @@
 .Head {
-	display: flex;
 	position: fixed;
+	width: 100%;
 	top: 0;
-	x-index: 99999999999;
+	left: 0;
+	display: flex;
 	flex-direction: column;
-	align-items: center;
-	border: 3px solid red;
+	z-index:2;
 }
 .Header {
-  display: flex;
-  min-width: 100vw;
-  z-index: 999999999999999;
-  padding: 0vw 9vw 0vw 5vw;
-  background-color: rgba(50, 118, 186, 0.9);
+	z-index: 2;
+	display: flex;
+	background-color: rgba(50, 118, 186, 0.9);
+	padding: 0 3rem 0 3rem;
 }
-.HeadBang {
-
+.HeadBangHi {
+	z-index: 1;
+	opacity: 0;
+	transform: translateY(-100%);
+}
+.HeadBangSh {
+	z-index: 1;
+	opacity: 1;
+	background-color: #FFFFFF;
+	transition: ease 500ms;
+	transform: translateY(00%);
+}
+.BlueLineInHead {
+	margin: 0 0 0 0;
+	width: 100%;
+	background-color: blue;
+	height: 0.5rem;
+}
+.BlueLineInHeadbelow {
+  padding: 0.7rem 0 0.7rem 0;
 	display: flex;
 	justify-content: space-around;
-	align-items: center;
-
-	width: 97%;
-	background-color: #FFFFFF;
-	transform: translateY(130%);
 }
 .Header img {
   width: 24vw;

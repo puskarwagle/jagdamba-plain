@@ -1,3 +1,19 @@
+  const helloElement = document.getElementById('frontText');	
+	var rect = helloElement.getBoundingClientRect();
+	console.log(rect.top);
+	
+//Header
+const headbang = new IntersectionObserver((entries) => {
+		entries.forEach((entry) => {
+				//console.log(entry)
+				if (entry.isIntersecting) {
+						entry.target.classList.add("HeadBangSh");
+				}
+		});
+});
+const header = document.querySelectorAll(".HeadBangHi");
+header.forEach((el) => headbang.observe(el));
+
 //Fronttext 1 and 2 animations
 const textanime = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {

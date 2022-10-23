@@ -1,7 +1,7 @@
 //Super
 const first = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
-				console.log(entry)
+				//console.log(entry)
 				if (entry.isIntersecting) {
 						entry.target.classList.add("SuperSh");
 				}
@@ -13,7 +13,7 @@ firstT.forEach((el) => first.observe(el));
 //Gyalva
 const second = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
-				console.log(entry)
+				//console.log(entry)
 				if (entry.isIntersecting) {
 						entry.target.classList.add("GyalvaSh");
 				}
@@ -25,7 +25,7 @@ secondT.forEach((el) => second.observe(el));
 //Rajesh
 const third = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
-				console.log(entry)
+				//console.log(entry)
 				if (entry.isIntersecting) {
 						entry.target.classList.add("RajeshSh");
 				}
@@ -37,7 +37,7 @@ thirdT.forEach((el) => third.observe(el));
 //Madhu
 const fourth = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
-				console.log(entry)
+				//console.log(entry)
 				if (entry.isIntersecting) {
 						entry.target.classList.add("MadhuSh");
 				}
