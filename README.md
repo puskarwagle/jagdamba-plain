@@ -1,1 +1,0 @@
-# jagdamba-plain
