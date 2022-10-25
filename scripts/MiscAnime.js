@@ -7,11 +7,8 @@ const handleHeader = () => {
   
   const update = () => {
     page1Top = page1.getBoundingClientRect().top
-    if (page1Top < 0) {
-      headerWhite.classList.replace("HeadBangHi", "HeadBangSh");
-    }
-    else {
-      headerWhite.classList.add("HeadBangHi");
+    if (page1Top < 153) {
+            headerWhite.classList.toggle("HeadBangSh");
     }
     requestAnimationFrame(update)
   }
