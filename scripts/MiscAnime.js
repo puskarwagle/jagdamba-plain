@@ -1,18 +1,25 @@
-  const helloElement = document.getElementById('frontText');	
-	var rect = helloElement.getBoundingClientRect();
-	console.log(rect.top);
-	
 //Header
-const headbang = new IntersectionObserver((entries) => {
-		entries.forEach((entry) => {
-				//console.log(entry)
-				if (entry.isIntersecting) {
-						entry.target.classList.add("HeadBangSh");
-				}
-		});
-});
-const header = document.querySelectorAll(".HeadBangHi");
-header.forEach((el) => headbang.observe(el));
+const handleHeader = () => {
+  const headerWhite = document.querySelector('.HeadBangHi');
+  const page1 = document.querySelector(".FrontText");
+  
+  let page1Top;
+  
+  const update = () => {
+    page1Top = page1.getBoundingClientRect().top
+    if (page1Top < 0) {
+      headerWhite.classList.replace("HeadBangHi", "HeadBangSh");
+    }
+    else {
+      headerWhite.classList.add("HeadBangHi");
+    }
+    requestAnimationFrame(update)
+  }
+  console.log(page1.getBoundingClientRect().top)
+  update()
+}
+
+handleHeader();
 
 //Fronttext 1 and 2 animations
 const textanime = new IntersectionObserver((entries) => {

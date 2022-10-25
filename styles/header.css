@@ -14,7 +14,7 @@
 	padding: 0 3rem 0 3rem;
 }
 .HeadBangHi {
-	z-index: 1;
+	z-index: -1;
 	opacity: 0;
 	transform: translateY(-100%);
 }
@@ -23,7 +23,7 @@
 	opacity: 1;
 	background-color: #FFFFFF;
 	transition: ease 500ms;
-	transform: translateY(00%);
+	transform: translateY(0%);
 }
 .BlueLineInHead {
 	margin: 0 0 0 0;
