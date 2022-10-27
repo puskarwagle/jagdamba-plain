@@ -2,7 +2,7 @@
   position: absolute;
   text-align: center;
   min-width: 70vw;
-  margin: 0 auto;
+  pointer-events: none;
   padding: 2rem 3rem 2rem 3rem;
   background-color: #000000;
   font-size: 1.7vw;
@@ -14,7 +14,7 @@
 }
 .Rectangles .grid-box:focus .pTex {
 	position: absolute;
-	margin: 0 auto;
+	border-radius: 6x;
   display: block;
   max-width:70vw;
   transform: translateY(30%);
