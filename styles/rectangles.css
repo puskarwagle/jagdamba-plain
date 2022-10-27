@@ -16,6 +16,8 @@
 	transform: translateY(80%);
 	opacity: 0;
   transition: 500ms ease-in-out;
+  box-shadow: 0px 0px 3px;
+  border-radius: 5px;
 }
 .Rectangles .grid-boxAnime {
 	transform: translateY(0%);
@@ -32,18 +34,33 @@
 	align-items: center;
 	text-align: center;
 	justify-content: space-between;
+	cursor:help;
 }
 .Rectangles .grid-box img {
 	margin-top: 10%;
   width: 80%;
+  cursor:help;
 }
 .Rectangles .grid-box:hover img {
 	width: 90%;
   transition: 0.4s;
 }
+.Rectangles .One img {
+	width: 70%;
+}
+.Rectangles .One:hover img {
+	width: 85%;
+}
+.Rectangles .Six img {
+	width: 70%;
+}
+.Rectangles .Six:hover img {
+	width: 85%;
+}
 .Rectangles .grid-box p {
 	font-size: 2.5vw;
 	color: #ffffff;
+	cursor:help;
 }
 #circle {
   width: 5vw;
@@ -57,6 +74,7 @@
   background: #000000;
   display: inline;
   margin-top:-12%;
+  cursor:help;
 }
 .Rectangles .One {
   background-color: rgb(244,174,82);

@@ -6,6 +6,9 @@
   padding: 3rem 1rem 5rem 1rem;
   font-size: 2rem;
 }
+#contact-form {
+	border: 2px solid green;
+}
 .FormHead {
 	font-size: 0.5rem;
 	transition: 500ms ease-in-out;

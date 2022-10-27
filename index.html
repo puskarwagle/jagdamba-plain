@@ -21,6 +21,7 @@
 	<script defer src="./scripts/SuperAnime.js"></script>
 	<script defer src="./scripts/JastaAnime.js"></script>
 	<script defer src="./scripts/MiscAnime.js"></script>
+	<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
 </head>
 <body>
 <div class="App">
@@ -162,8 +163,18 @@
     
     <div class="Youtube">
     <span>Youtube video commented..</span>
-				<!-- <iframe class="responsive-iframe" src="https://www.youtube.com/embed/4FkdklpKzWo?autoplay=0&mute=1&enablejsapi=1">
+		<!-- <iframe class="responsive-iframe" src="https://www.youtube.com/embed/4FkdklpKzWo?autoplay=0&mute=1&enablejsapi=1">
 </iframe> -->
+		<form id="contact-form">
+        <input type="hidden" name="contact_number">
+        <label>Name</label>
+        <input type="text" name="user_name">
+        <label>Email</label>
+        <input type="email" name="user_email">
+        <label>Message</label>
+        <textarea name="message"></textarea>
+        <input type="submit" value="Send">
+    </form>
    </div>
     
     

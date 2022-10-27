@@ -12,6 +12,7 @@
 	display: flex;
 	background-color: rgba(50, 118, 186, 0.9);
 	padding: 0 3rem 0 3rem;
+	box-shadow: 0px 0px 10px;
 }
 .HeadBangHi {
 	z-index: -1;
