@@ -33,6 +33,16 @@ const textanime = new IntersectionObserver((entries) => {
 const texts = document.querySelectorAll(".textHI");
 texts.forEach((el) => textanime.observe(el));
 
+//Rectangles pTexts
+			let button = document.querySelector('.One');
+			let msg = document.querySelector('.pOne');
+
+			button.addEventListener('click', ()=>{
+ 			msg.classList.toggle('pOneSH');
+ 			
+		})
+
+
 //Form h1 animation
 const formhead = new IntersectionObserver((entries) => {
 		entries.forEach((entry) => {
