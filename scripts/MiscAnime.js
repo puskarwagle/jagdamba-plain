@@ -15,11 +15,12 @@ const handleHeader = () => {
     }
     requestAnimationFrame(update)
   }
-  console.log(page1.getBoundingClientRect().top)
+ // console.log(page1.getBoundingClientRect().top)
   update()
 }
 
 handleHeader();
+
 
 //Fronttext 1 and 2 animations
 const textanime = new IntersectionObserver((entries) => {
@@ -33,15 +34,6 @@ const textanime = new IntersectionObserver((entries) => {
 const texts = document.querySelectorAll(".textHI");
 texts.forEach((el) => textanime.observe(el));
 
-//Rectangles pTexts
-			let button = document.querySelector('.One');
-			let msg = document.querySelector('.pOne');
-
-			button.addEventListener('click', ()=>{
- 			msg.classList.toggle('pOneSH');
- 			
-		})
-
 
 //Form h1 animation
 const formhead = new IntersectionObserver((entries) => {
@@ -54,6 +46,7 @@ const formhead = new IntersectionObserver((entries) => {
 });
 const formheader = document.querySelectorAll(".FormHead");
 formheader.forEach((el) => formhead.observe(el));
+
 
 //Rectangle boxes animation
 const rectboxes = new IntersectionObserver((entries) => {
