@@ -1,0 +1,148 @@
+.Head {
+	position: fixed;
+	width: 100%;
+	top: 0;
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	z-index:2;
+}
+.Header {
+	z-index: 2;
+	display: flex;
+	background-color: rgba(50, 118, 186, 0.9);
+	padding: 0 3rem 0 3rem;
+	box-shadow: 0px 0px 10px;
+}
+.HeadBangHi {
+	z-index: -1;
+	opacity: 0;
+	transform: translateY(-100%);
+}
+.HeadBangSh {
+	z-index: 1;
+	opacity: 1;
+	background-color: #FFFFFF;
+	transition: ease 500ms;
+	transform: translateY(0%);
+}
+.BlueLineInHead {
+	margin: 0 0 0 0;
+	width: 100%;
+	background-color: rgba(50, 118, 186, 0.9);
+	height: 0.5rem;
+}
+.BlueLineInHeadbelow {
+	font-size:2vw;
+  padding: 0.3rem 0 0.3rem 0;
+	display: flex;
+	justify-content: space-around;
+}
+.Header img {
+  width: 24vw;
+  outline: 0px solid red;
+}
+.Header nav {
+  margin-left: auto;
+  outline: px solid red;
+}
+.Header nav ul {
+	padding:0 0;
+  font-size: 1.6vw;
+  color: #FFFFFF;
+  list-style: none;
+  outline: px solid orange;
+}
+.Header nav ul li  {
+	text-shadow: 1px -1px 1px grey;
+}
+.Header nav ul li {
+	padding:0 0.5rem;
+	display:inline-block;
+	font-weight: 700;
+	height: 100%;
+	outline: px solid red;
+}
+.Header nav ul li:after {
+  display:block;
+  content: '';
+  border-bottom: solid 2px orange;  
+  transform: scaleX(0);  
+  transition: transform 250ms ease-in-out;
+}
+.Header nav ul li:hover:after {
+	transform: scaleX(1);
+}
+.Header nav ul .headtext .headtextbox {	/* box of abouts n products */
+	border: 1px solid grey;
+	display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+	min-width: 10vw;
+  background-color: #FFFFFF;
+  position: absolute;
+  z-index: 99;
+  display: none;
+}
+.Header nav ul .headtext:focus .headtextbox {
+	display: block;
+	padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+.Header nav ul .headtext .headtextbox li {		/* abouts and products */
+	font-size: 1.5vw;
+	font-weight: 50;
+	color: #000000;
+	padding: 0.5rem;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+@media only screen and (max-width: 700px) {
+		.Header {padding: 0 1rem 0 1rem;}
+		.Header img {margin: 1 1rem 1rem 1rem;}
+		.Head .Header nav {
+			position:absolute;
+			right:2rem;
+			top:1rem;
+			flex-direction:column;
+			background-color: rgba(50, 118, 186, 0.9);
+			box-shadow: 0px 0px 4px;
+			border-radius:5px;
+			padding:0 0.5rem 0 0.5rem;
+			}
+		
+		.Header nav ul {
+				display: flex;
+  			flex-direction: column;
+  			gap:1rem;
+  			font-size:1rem;
+  			padding:0 0;
+			}
+  		.Header nav ul .home {
+				display:none;
+  			
+			}
+  		.Header nav ul li {
+  			text-shadow: 1px -1px 2px grey;
+  		}
+  		
+  	
+
+
+
+
+
+
+  		
+  		
+  		
+  		
+  		
+  		
+}
+
+
+
+
