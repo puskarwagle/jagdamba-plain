@@ -51,6 +51,7 @@ textarea {
   height: 2.3rem;
   width: 90%;
   cursor: pointer;
+  caret-color: #00ccff;
 }
 textarea {
  	height:12rem;

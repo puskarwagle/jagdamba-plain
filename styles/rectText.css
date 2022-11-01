@@ -1,24 +1,23 @@
 .pTex {
-	padding:1rem 2rem 1rem 2rem;
-	border-radius:10px;
-	font-weight:600;
-	background-color:#000000;
-	color:#FFFFFF;
-	text-align:center;
-	position:absolute;
-	left:0;
-	transform:translateY(-200%);
-	border:2px solid red;
-	opacity:0;
-}
-.pTexSH {
-  z-index:2;
-	opacity:1;
-	transform:translateY(0%);
-	border:2px solid orage;
+	position: absolute;
+	width:70vw;
+	margin:0 0;
+	transform: translate(0, -20vw);
+	border:2px solid orange;
+	background-color:#FFFFFF;
+	padding:2rem 2rem 2rem 2rem;
 }
 
+.Rectangles .grid-box:focus .pTex {
+	
+}
 
 @media only screen and (max-width: 600px) {
-	
+	.pTex {
+		position: absolute;
+		width:70vw;
+		
+		border:2px solid orange;
+		background-color:#FFFFFF;
+	}
 }

@@ -9,6 +9,7 @@
 	box-sizing: border-box;
 	font-family: 'Helvetica', 'Arial', sans-serif;
 	cursor:auto;
+	caret-color: transparent;
 }
 html, body {
 	margin: 0;
